@@ -405,5 +405,15 @@
                 <td><input type="text" id="ae"/></td>
             </tr>
         </form>
+        <p id="percentages"></p>
     </table>
+    firstIndices = 'abcdefghijklmnopqrst'.split('');
+    secondIndices = ['a', 'b', 'c', 'd', 'e'];
+    for(var i=0; i<20; i++) {
+      rowTotals = []; 
+      for(var j=0; j<5; j++) {
+        rowTotals[i] = document.getElementById(firstIndices[i]+secondIndices[j]);
+      } 
+      document.getElementById("percentages").innerHTML += "\n"+rowTotals[i];
+    }
 </body>
