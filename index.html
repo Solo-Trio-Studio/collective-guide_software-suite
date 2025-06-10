@@ -348,16 +348,21 @@
                 <td><label for="se">Romance / n/a / n/a.</label></td>
                 <td><input type="text" id="se"/></td>
             </tr>
+            <button type="button" onclick="calculate()">Calculate</button>
         </form>
         <p id="percentages"></p>
     </table>
-    firstIndices = 'abcdefghijklmnopqrs'.split('');
-    secondIndices = ['a', 'b', 'c', 'd', 'e'];
-    for(var i=0; i<20; i++) {
-      rowTotals = []; 
-      for(var j=0; j<5; j++) {
-        rowTotals[i] = document.getElementById(firstIndices[i]+secondIndices[j]);
-      } 
-      document.getElementById("percentages").innerHTML += "\n"+rowTotals[i];
-    }
+    <script>
+      firstIndices = 'abcdefghijklmnopqrs'.split('');
+      secondIndices = ['a', 'b', 'c', 'd', 'e'];
+      calculate() {
+        for(var i=0; i<20; i++) {
+          rowTotals = []; 
+          for(var j=0; j<5; j++) {
+            rowTotals[i] = document.getElementById(firstIndices[i]+secondIndices[j]);
+          } 
+          document.getElementById("percentages").innerHTML += "\n"+rowTotals[i];
+        }
+      }
+    </script>
 </body>
