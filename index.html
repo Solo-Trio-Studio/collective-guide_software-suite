@@ -314,7 +314,10 @@
         ["octahedron", "cube", "icosahedron", "tetrahedron", "dodecahedron"],
         ["History / n/a / n/a", "Fantasy / n/a / n/a", "Children's / n/a / n/a", "Mystery / n/a / n/a", "Romance / n/a / n/a"]
       ];
-      for(var i=0; i<20; i++) {
+      for(var i=0; i<19; i++) {
+        document.getElementById((firstIndices[i]+secondIndices[j]).toUpperCase()).value = categoryNames[i];
+      }
+      for(var i=0; i<19; i++) {
         for(var j=0; j<5; j++) {
           document.getElementById(firstIndices[i]+secondIndices[j]).value = categoryTypes[i][j];
         } 
