@@ -283,12 +283,11 @@
         "skills / abilities", 
         "hobbies", 
         "cultures / languages", 
-        "enneagram / MBTI / temperaments / DISC / derestyles / tetrad", 
+        "enneagram / MBTI / temperaments / DISC / derestyles / tetrad / intelligences", 
         "neurochemicals",
         "brainwaves", 
         "feng shui", 
-        "laozi flow",
-        "causes", 
+        "laozi flow", 
         "philosophies", 
         "areas of scholarship", 
         "polichemical cores", 
@@ -304,12 +303,11 @@
         ["soft / intangible", "soft / intangible", "transferrable / semitangible", "hard / tangible", "hard / tangible"],
         ["n/a", "n/a", "n/a", "n/a", "n/a"],
         ["African / n/a", "Latin / n/a", "Native Indian / n/a", "Asian / n/a", "Caucasian / n/a"],
-        ["9 1 / IXXJ / Phlegmatic / Steadiness / Dandere / Faith in Humanity", "7 8 / EXXP / Sanguine / Conscientiousness / Yandere / Humanism", "6 / XXXX / n/a / Leading / n/a / n/a", "4 5 / IXXP / Melancholic / Intrigue / Kuudere / Golden Rule", "2 3 / EXXJ / Choleric / Domination / Tsundere / Kantianism"],
+        ["9 1 / IXXJ / Phlegmatic / Steadiness / Dandere / Faith in Humanity / liguistic spatial", "7 8 / EXXP / Sanguine / Conscientiousness / Yandere / Humanism / musical naturalistic", "6 / XXXX / n/a / Leading / n/a / n/a / existential", "4 5 / IXXP / Melancholic / Intrigue / Kuudere / Golden Rule / intrapersonal logical-mathematical", "2 3 / EXXJ / Choleric / Domination / Tsundere / Kantianism / interpersonal bolily-kinesthetic"],
         ["adrenalin", "dopamine", "GABA", "serotonin", "glutamate"],
         ["delta", "theta", "alpha", "beta", "gamma"],
         ["family | career", "travel | fame", "health", "youthfulness | knowledge", "relationships | wealth"],
         ["phenotypes | attention", "thoughts | words", "environment", "actions | habits", "character | destiny"],
-        ["n/a", "n/a", "n/a", "n/a", "n/a"],
         ["axiology", "axiology", "ontology", "epistemology", "epistemology"],
         ["social studies", "natural sciences", "miscellaneous subjects | outlier topics", "natural sciences", "formal sciences"],
         ["affectation", "instinct", "chakras", "instinct", "cognition"],
@@ -320,16 +318,16 @@
         ["octahedron", "cube", "icosahedron", "tetrahedron", "dodecahedron"],
         ["History / n/a / n/a", "Fantasy / n/a / n/a", "Children's / n/a / n/a", "Mystery / n/a / n/a", "Romance / n/a / n/a"]
       ];
-      for(var i=0; i<19; i++) {
+      for(var i=0; i<18; i++) {
         document.getElementById(firstIndices[i].toUpperCase()).textContent = categoryNames[i];
       }
-      for(var i=0; i<19; i++) {
+      for(var i=0; i<18; i++) {
         for(var j=0; j<5; j++) {
           document.getElementById((firstIndices[i]+secondIndices[j]).toUpperCase()).textContent = categoryTypes[i][j]
         } 
       }
       calculate() {
-        for(var i=0; i<20; i++) {
+        for(var i=0; i<18; i++) {
           rowTotals = []; 
           for(var j=0; j<5; j++) {
             rowTotals[i] = document.getElementById(firstIndices[i]+secondIndices[j]);
