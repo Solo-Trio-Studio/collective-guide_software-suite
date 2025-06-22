@@ -24,6 +24,5 @@ The following was used to generate the table form:
 			console.log("N e X t");
 			console.log("");
       		}
-
 	</script>
 </body>
