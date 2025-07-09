@@ -1,13 +1,6 @@
-<head>
-  <title>Collective Guide</title>
-</head>
-<body>
-    <style>
-      table, th, td {
-        border: 1px solid light-blue;
-        border-radius: 10px;
-      }
-    </style>
+fn main {
+  println!("Collective Guide")
+    /*!
     <p>Enter values between 0.1 to 3.0.</p>
       <table>
         <form>
@@ -247,9 +240,7 @@
             </tr>
             <button type="button" onclick="calculate()">Calculate</button>
         </form>
-        <p id="percentages"></p>
-    </table>
-    <script>
+      */
       firstIndices = 'abcdefghijklmnopqrs'.split('');
       secondIndices = ['a', 'b', 'c', 'd', 'e'];
       categoryNames = [
@@ -309,5 +300,4 @@
           document.getElementById("percentages").textContent += "\n"+rowTotals[i];
         }
       }
-    </script>
-</body>
+}
